@@ -1,9 +1,10 @@
 body {
 
-background-color:aqua;
+background-color:crimson;
 }
 h1{
     text-align: center;
+    color:cyan;
 }
 #submit_button{
     margin-top: 20px;

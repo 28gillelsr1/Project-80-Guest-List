@@ -60,25 +60,20 @@ function sorting()
 }
 function searching()
 {
-    display_search_array=[]
-    var s=document.getElementById("display_search").value;
-    var found=0;
-    var j;
-    for(j=0; j<guest_array.length; j++)
-{
-if(s==display_search_array[j]){
-    found=found+1;
-  
-
-} else{
-    found=0;
-}
-
-
-document.getElementById("display_search").innerHTML="Name Found "+ found+" time/s";
-console.log("found name"+ found+"time/s")
-
     
+	var s= document.getElementById("name_2").value;
+	var found=0;
+	var j;
+	for(j=0; j<guest_array.length; j++)
+		{
+			if(s==guest_array[j]){
+				found=found+1;
+			}	
+		}
+	document.getElementById("search_button").innerHTML="name found "+found+" time/s";
+	console.log("found name "+found+" time/s");
 }
+    
 
-}
+
+
